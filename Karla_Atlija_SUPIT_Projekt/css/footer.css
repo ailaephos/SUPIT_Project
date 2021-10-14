@@ -1,0 +1,76 @@
+.wrapper{
+    min-height: 100%;
+    position: relative;
+}
+.page{
+    padding-bottom: 15vh;
+}
+body{
+    height: 100vh;
+}
+#foot_placeholder{
+    position: absolute;
+    bottom: 0px;
+}
+#footer{
+    background-image: url("/Karla_Atlija_SUPIT_Projekt/img/zaiskri-bg.jpg");
+    width: 100vw;
+    height: auto;
+    background-size: 100vw auto;
+    
+}
+#footer div:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vw;
+    padding-top: 2vw;
+}
+#footer div:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+}
+#footer div:nth-of-type(1) p{
+    font-size: 2.75vw;
+    color: white;
+    text-shadow: 0 0 2vw black;
+    font-family: 'Roboto', sans-serif;
+}
+#footer div:nth-of-type(2) p{
+    font-size: 2.75vw;
+    color:rgba(131, 15, 89, 0.897);
+    text-shadow: 0 0 2vw white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+@media only screen and (max-width: 768px) {
+    
+
+    #footer{
+    height: 40vh;
+    width: 100vw;
+    background-size: auto 40vh;
+
+    }
+
+    #footer div:nth-of-type(1){
+        height: 14vh;
+        margin: 2vw;
+    }
+    #footer div:nth-of-type(2){
+        height: 9vh;
+    }
+    #footer div:nth-of-type(2) p{
+        font-size: 5vh;
+       
+    }
+    #footer div:nth-of-type(1) p{
+        font-size: 4vh;
+        text-align: center;
+    }
+
+
+}
+

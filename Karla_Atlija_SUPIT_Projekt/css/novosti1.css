@@ -1,0 +1,201 @@
+
+#TopPage{
+    
+    animation: flying 1s ease forwards;
+    position:relative;
+    height:34vw;
+    width:100vw;
+    transform:translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    z-index: -1;
+}
+@keyframes flying {
+    to{
+    transform:translateY(0%);
+    -webkit-transform: translateY(0%);  
+      }
+}
+#TopPage p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    width: 45vw;
+    text-align: center;
+    text-shadow: 0 0 1vw black;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#WorldSkills{
+    width: 100vw;
+}
+#div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: flyingUp 1s ease forwards;
+    position:relative;
+    transform:translateY(34%);
+    -webkit-transform: translateY(34%);
+    height: 13vw;
+}
+@keyframes flyingUp {
+    to{
+    transform:translateY(0%);
+    -webkit-transform: translateY(0%);  
+      }
+}
+#div1 h1{
+
+
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.75vw;
+    border-bottom:rgb(196, 144, 13) 0.15vw solid;
+    padding: 1.5vw;
+    width: 39vw;
+ 
+}
+.text{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.text p{
+    width:67vw;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 2.5vw;
+    font-size: 1.4vw;
+}
+#vid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vw;
+    padding-top: 2vw;
+}
+#gallery{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-rows: auto;
+    grid-template-columns: 19.5vw 19.5vw;
+    padding-top: 3vw;
+}
+.small{
+    width:19vw;
+}
+#rightBar{
+    display: none;
+}
+#wSkillsVid{
+    width: 40vw;
+    height: auto;
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+
+    #foot_placeholder{
+        display: none;
+    }
+    #rightBar{
+        display: none;
+    }
+    #TopPage{
+    
+        animation: none;
+        height:auto;
+        transform:translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    #TopPage p{
+        font-size: 5vw;
+        width: 50vw;
+        text-align: center;
+
+    }
+    #div1{
+        animation: none;
+        transform:translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    #div1 h1{
+
+
+        width:50vw;
+        font-size: 4vw;
+       
+    }
+    .text p{
+        margin-top: 3vh;
+        width:75vw;
+        font-size: 4vw;
+    }
+    #gallery{
+    
+        grid-template-columns: 39vw 39vw;
+        padding-top: 3vw;
+    }
+    .small{
+        width:38vw;
+        height: auto;
+
+    }
+    #wSkillsVid{
+        width: 60vw;
+        height: auto;
+    }
+ }
+ @media only screen and (max-width: 768px) {
+    #foot_placeholder{
+        display: none;
+    }
+    #rightBar{
+        display: none;
+    }
+    #TopPage{
+    
+        display:none;
+    }
+  
+    #div1{
+        animation: none;
+        height: auto;
+ 
+    }
+    #div1 h1{
+
+       font-size: 5vh;
+       width:90vw;
+       padding-top: 7vh;
+   
+    }
+    .text{
+        
+        margin-top: 5vh;
+    }
+    .text p{
+        
+        width: 85vw;
+        font-size: 4vh;
+    }
+    #gallery{
+        
+        grid-template-columns: 47vw 47vw;
+
+    }
+    .small{
+        
+        width:45vw;
+    }
+    #wSkillsVid{
+        width: 70vw;
+        height: auto;
+    }
+}
+

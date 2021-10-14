@@ -1,0 +1,97 @@
+
+<img id = "logo" src="img/Algebra-logo.png" alt ="Algebra logo">
+<ul id ="leftBar">        
+    <li>  
+        <a  href = "index.html" ><i class="bi bi-house-door" style ="color:rgb(255, 195, 0 ); margin-right: 0.3vw;"></i></a>                                
+        <a class = "txta" href="index.html">Početna</a>
+    </li> 
+    
+    <li>
+        <a href = "onama.html"><i class="bi bi-chat-square-text" style ="color:rgb(255, 195, 0 ); margin-right: 0.3vw;"></i></a>
+        <a class = "txta" href="onama.html">O nama</a>
+    </li>  
+    <li>
+        <a href="novosti.html"><i class="bi bi-info-circle-fill" style ="color:rgb(255, 195, 0 ); margin-right: 0.3vw;"></i></a>
+        <a  class ="txta" href="novosti.html">Novosti</a>
+    </li>
+    <li>
+        <a href="nastavniplan.html"><i class="bi bi-info-circle-fill" style ="color:rgb(255, 195, 0 ); margin-right: 0.3vw;"></i></a>
+        <a class = "txta" href="nastavniplan.html">Nastavni plan</a>  
+    </li>
+    <li>
+        <a href ="#" id = "Kontakt2"><i class="bi bi-envelope" style ="color:rgb(255, 195, 0 ); margin-right: 0.3vw;"></i></a>
+        <a class = "txta" href="#" id = "Kontakt">Kontakt</a>
+        <div id="myDialog">
+            <form id = "myform" method = "post" action ="http://www.fulek.com/VUA/SUPIT/ContactUs">
+                <label for="name">Puno ime:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="importance">Važnost poruke:</label>
+                <select name="importance" >
+                        <option value="high" selected>Visoka</option>
+                        <option value="low">Niska</option>
+                </select>
+                <label for="message" >Vaša poruka:</label>
+                <textarea name="message" rows="7" cols="80"></textarea>
+                <label for="newsletter">Primaj newsletter:</label><input type="checkbox" id="newsletter" name="newsletter">   
+                <div id ="buttons">
+                <input type="submit" value = "Pošalji">
+                <input type="button" value = "Odustani" onclick="Odustani()">
+                </div>
+            </form>
+        </div>
+        
+    </li>
+</ul>
+<ul id = "rightBar" class = "slideIn">
+    <li><a href = "#nasevrijednosti">Naše vrijednosti</a></li>
+    <li><a href = "#povijest">Povijest</a></li>
+    <li><a href = "#algebragrupe">Algebra grupa</a></li>
+    <li><a href = "#kakodonas">Kako do nas</a></li>
+
+</ul>
+<script>  
+    $(document).ready(function(){ 
+      
+         $("#closeTogg").click(function(){
+      
+            if($("#closeTogg").text() == "☰"){
+            $("#closeTogg").text("🞬");
+            }
+            else{
+            $("#closeTogg").text("☰");
+            }
+    
+            $("#header").toggle("slow");
+        });
+    });
+    </script>
+    <script>
+    $("#myDialog").dialog({
+    autoOpen  : false,
+    dialogClass: "no-close",
+    title: " Kontaktirajte nas",
+    width: 500,
+    open: function(event, ui){
+        $(".ui-dialog-titlebar").append("<img src='img/icons8-envelope-24.png' id='myNewImage' />");
+    },
+    close: function(event, ui){
+        $("#myNewImage").remove();
+    },
+        modal: true,
+    });
+    
+    $('#Kontakt').click(function() {
+    $("#myDialog").dialog("open");
+    });
+
+    $('#Kontakt2').click(function() {
+    $("#myDialog").dialog("open");
+    });
+
+    function Odustani(){
+        $("#myDialog").dialog("close")
+    };
+    
+    </script>

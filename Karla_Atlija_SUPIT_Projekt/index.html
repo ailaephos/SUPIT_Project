@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Početna</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Početna stranica visokog učilišta Algebra">
+
+    <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.min.css"/>
+    
+    <script src ="node_modules/jquery-ui-dist/external/jquery/jquery.js"></script>
+    <script src = "node_modules/jquery-ui-dist/jquery-ui.min.js"></script> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> 
+
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link href="css/navigation.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+
+  
+</head>
+
+<body> 
+   
+    <div class = "wrapper">
+
+    <div class = "page">
+    <div id = "buttondiv">
+        <button id = "closeTogg">X</button>  
+    </div> 
+    <div id ="header"> 
+        <nav id ="nav_placeholder"></nav>   
+    </div> 
+  
+    <script src = "js/load_navigation.js"></script>
+
+    <div id = "background">
+        <img src = "img/kakoDoNas.jpg" alt = "algebra-logo-back">
+    </div>
+   
+    <div style ="position: relative; text-align: center;">
+        <video autoplay muted loop id="myVideo"><source src="video/typingOnlaptop.mp4" type="video/mp4"></video>
+        <div id = "anim" style = " position: absolute; top: 50%;  left: 50%; transform: translate(-50%, -50%);">
+            <div id = "text"></div><div id="first"></div><div id="cursor"></div>  
+        </div>
+        <div id = "anim1" style = " position: absolute; top: 75%;  left: 50%; transform: translate(-50%, -50%);">
+        <div id = "third"></div>
+        <div id="cursor2"></div>
+        </div>
+    </div>
+
+    </div>
+
+    <div id ="foot_placeholder"></div>
+
+    </div>
+
+    <script src = "js/load_footer.js"></script>
+    <script src = "js/typewriter.js"></script>
+    
+</body>
+
+</html>

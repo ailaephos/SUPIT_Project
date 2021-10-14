@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mastavni plan">
+    <title>Nastavni plan</title>
+
+
+    <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.min.css"/>
+    
+    <script src ="node_modules/jquery-ui-dist/external/jquery/jquery.js"></script>
+    <script src = "node_modules/jquery-ui-dist/jquery-ui.min.js"></script> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+   
+    <link href="css/navigation.css" rel="stylesheet" />
+    <link href="css/rightbar.css" rel="stylesheet" />
+    <link href="css/nastavniplan.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+ 
+</head>
+<body>
+    <div class = "wrapper">
+
+    <div class = "page">
+    <div id = "buttondiv">
+        <button id = "closeTogg">X</button>  
+    </div> 
+    <div id ="header">  
+
+        <div id ="nav_placeholder"></div>
+    </div> 
+    <div id = "div1">
+        <h1>Nastavni plan</h1>
+    </div>
+    <div id ="centerColumn">
+        <div id = "search">
+            <label for="search-keyword">Naziv kolegija: </label>
+            <input id="search-keyword" type="text" placeholder="Započnite unos naziva kolegija...">
+        </div>
+        <div id = "tablica">
+            <table id ="tablePredmeti">
+                <thead id = "hborder"></thead>
+                <tbody id = "body" ></tbody>             
+            </table>
+
+        </div>
+    </div>
+
+    </div>
+   
+    <div id = "foot_placeholder"></div>
+
+    </div>
+    <script src = "js/load_footer.js"></script>
+    <script src = "js/load_navigation.js"></script>
+    <script src = "js/nastavniplan.js"></script>
+   
+</body>
+</html>

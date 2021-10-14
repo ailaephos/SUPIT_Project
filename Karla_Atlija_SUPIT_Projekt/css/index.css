@@ -1,0 +1,123 @@
+body{
+
+    background-color: black;
+
+}
+#myVideo{
+    width: 100vw;
+    top:50%;
+    left:50%;
+}
+#background{
+    display: none;
+}
+#foot_placeholder{
+    display: none;
+}
+#container {
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: rgb(235, 233, 230);
+    font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+    font-size: 5vw;
+    text-shadow: 0 0  1vw black;
+}
+
+#cursor, #cursor2{
+	display: inline-block;
+	vertical-align: middle;
+	width: 1vw;
+	height: 7vh;
+	background-color: rgb(245, 242, 238);
+	animation: blink .75s step-end infinite;
+}
+#first{
+
+    display: inline-block;
+	vertical-align: middle;
+	color: rgb(235, 233, 230);
+    font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+    font-size: 5vw;
+    text-shadow: 0 0  1vw black;
+    margin-left: 1vw;
+}
+#third{
+    display: inline-block;
+	vertical-align: middle;
+	color: rgb(121, 9, 9);
+    font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+    font-size: 5vw;
+    text-shadow: 0 0  1vw rgb(59, 25, 25);
+    margin-left: 1vw;
+}
+#anim,#anim2{
+    width: 60vw;
+}
+#rightBar{
+    display:none;
+}
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: rgb(247, 246, 245); 
+	}
+}
+
+@media only screen and (max-width: 768px) {
+ 
+    #background{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50%;
+        padding-bottom: 50%;
+
+    }
+    #background img{
+        width: 100vw;
+        height: auto;
+    }
+    #myVideo{
+        display:none;
+    }
+    
+    #foot_placeholder{
+        display:block;
+        position:fixed;
+        bottom: 0;
+        height: 40vh;
+        width: 100vw;
+        padding-top: 15vh;
+    }
+    #anim,#anim1{
+        
+        display: none;
+    }
+    #rightBar{
+        display: none;
+    }
+        
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+ 
+        body{
+
+            background-color: black;
+       
+        }
+        #myVideo{
+            height: 100vh;
+        }
+        #rightBar{
+            display:none;
+        }
+}
